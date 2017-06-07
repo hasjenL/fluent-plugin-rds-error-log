@@ -1,5 +1,4 @@
 require 'fluent/input'
-require 'myslog'
 
 class Fluent::RdsErrorLogInput < Fluent::Input
   Fluent::Plugin.register_input("rds_error_log", self)
@@ -289,6 +288,7 @@ class Fluent::RdsErrorLogInput < Fluent::Input
       @callback = callback
       on_timer # first call
       super(interval, repeat)
+      require 'myslog'
     end
 
     def on_timer
