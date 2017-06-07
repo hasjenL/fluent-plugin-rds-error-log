@@ -1,4 +1,4 @@
-require 'fluent:input'
+require 'fluent/input'
 require 'myslog'
 
 class Fluent::RdsErrorLogInput < Fluent::Input
