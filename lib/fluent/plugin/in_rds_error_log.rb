@@ -285,10 +285,10 @@ class Fluent::RdsErrorLogInput < Fluent::Input
 
   class TimerWatcher < Coolio::TimerWatcher
     def initialize(interval, repeat, &callback)
+      require 'myslog'
       @callback = callback
       on_timer # first call
       super(interval, repeat)
-      require 'myslog'
     end
 
     def on_timer
