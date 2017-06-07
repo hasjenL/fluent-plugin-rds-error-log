@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fluent-plugin-rds-mysql-log (0.1.4)
+    fluent-plugin-rds-error-log (0.2.0)
       aws-sdk (~> 2)
       fluentd (~> 0)
       myslog (~> 0.0)
@@ -9,16 +9,16 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    aws-sdk (2.7.0)
-      aws-sdk-resources (= 2.7.0)
-    aws-sdk-core (2.7.0)
+    aws-sdk (2.9.31)
+      aws-sdk-resources (= 2.9.31)
+    aws-sdk-core (2.9.31)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.7.0)
-      aws-sdk-core (= 2.7.0)
+    aws-sdk-resources (2.9.31)
+      aws-sdk-core (= 2.9.31)
     aws-sigv4 (1.0.0)
     cool.io (1.5.0)
-    fluentd (0.14.16)
+    fluentd (0.14.17)
       cool.io (>= 1.4.5, < 2.0.0)
       http_parser.rb (>= 0.5.1, < 0.7.0)
       msgpack (>= 0.7.0, < 2.0.0)
@@ -48,7 +48,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.7)
-  fluent-plugin-rds-mysql-log!
+  fluent-plugin-rds-error-log!
 
 BUNDLED WITH
-   1.14.6
+   1.15.1
