@@ -67,7 +67,7 @@ class Fluent::RdsErrorLogInput < Fluent::Input
 
   def shutdown
     super
-    @loop.stop
+    @watcher.terminate
     @thread.join
   end
 
