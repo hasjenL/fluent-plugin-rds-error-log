@@ -1,5 +1,6 @@
 # Amazon RDS for MySQL log input plugin for fluentd
-(Pulled from forked version of fluent-plugin-mysql-log repo)
+
+(or fluent-plugin-rds-genlog/..)
 
 ## Overview
 - Amazon Web Services RDS log input plugin for fluentd
